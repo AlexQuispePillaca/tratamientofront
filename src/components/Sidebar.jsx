@@ -31,7 +31,7 @@ export function Sidebar({ sidebarOpen, setsideBarOpen }) {
 
                 </div>
                 <h2>
-                    Poryecto2
+                    Proyecto2
                 </h2>
 
             </div>
