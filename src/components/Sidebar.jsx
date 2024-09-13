@@ -138,7 +138,7 @@ const secoundarylinkArray=[
 const Container = styled.div`
 color: ${(props) => props.theme.text};
   background: ${(props) => props.theme.bg};
-  position: ;
+  position: sticky;
   padding-top: 20px;
 .Sidebarbutton{
     position: absolute;
