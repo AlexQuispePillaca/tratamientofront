@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {Reglascomponent} from "../components/Reglascomponent";
 export function Reglas(){
     return (<Container>
-        <h1>Reglas</h1>
+        <Reglascomponent/>
     </Container>)
 }
 const Container=styled.div`
-height:100vh;
+
 `;

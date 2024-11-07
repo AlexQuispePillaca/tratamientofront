@@ -8,26 +8,26 @@ export function Homecomponent() {
       <Section>
         <SectionTitle>Noticias Recientes</SectionTitle>
         <Card>
-          <CardTitle>Noticia 1</CardTitle>
-          <CardDate>12 de Septiembre, 2024</CardDate>
+          <CardTitle>MINSA Inicia Campaña de Vacunación</CardTitle>
+          <CardDate>3 de Noviembre, 2024</CardDate>
           <CardContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            El Ministerio de Salud ha lanzado una nueva campaña de vacunación nacional contra la influenza. La campaña se llevará a cabo en todo el país y busca inmunizar a la población de riesgo antes de la temporada de lluvias.
           </CardContent>
         </Card>
 
         <Card>
-          <CardTitle>Noticia 2</CardTitle>
-          <CardDate>10 de Septiembre, 2024</CardDate>
+          <CardTitle>MINSA Publica Nuevas Medidas para la Prevención del Dengue</CardTitle>
+          <CardDate>1 de Noviembre, 2024</CardDate>
           <CardContent>
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed.
+            Para reducir el impacto del dengue, el Ministerio de Salud ha implementado una serie de medidas preventivas que incluyen la fumigación en áreas urbanas y rurales. La participación de la ciudadanía es esencial para mantener los hogares libres de criaderos de mosquitos.
           </CardContent>
         </Card>
 
         <Card>
-          <CardTitle>Noticia 3</CardTitle>
-          <CardDate>8 de Septiembre, 2024</CardDate>
+          <CardTitle>MINSA Reporta Aumento en la Tasa de Vacunación Infantil</CardTitle>
+          <CardDate>30 de Octubre, 2024</CardDate>
           <CardContent>
-            Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
+            El MINSA informó un incremento significativo en la tasa de vacunación infantil. Gracias a los esfuerzos conjuntos de profesionales de la salud y padres de familia, la cobertura de vacunación ha alcanzado niveles históricos.
           </CardContent>
         </Card>
       </Section>
@@ -36,23 +36,23 @@ export function Homecomponent() {
       <Section>
         <SectionTitle>Enunciados Importantes</SectionTitle>
         <Card>
-          <CardTitle>Enunciado 1</CardTitle>
+          <CardTitle>Reunión de Coordinación con el MINSA</CardTitle>
           <CardContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            Recordatorio: La reunión de coordinación con el Ministerio de Salud para discutir el plan de vacunación 2024-2025 se llevará a cabo el 15 de noviembre a las 10:00 am en el auditorio principal.
           </CardContent>
         </Card>
 
         <Card>
-          <CardTitle>Enunciado 2</CardTitle>
+          <CardTitle>Entrega de Reportes Mensuales</CardTitle>
           <CardContent>
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed.
+            Recordatorio: Los reportes de actividades mensuales deben ser entregados al MINSA antes del 5 de cada mes. Asegúrate de cumplir con el formato solicitado para agilizar el proceso de revisión.
           </CardContent>
         </Card>
 
         <Card>
-          <CardTitle>Enunciado 3</CardTitle>
+          <CardTitle>Sesión de Capacitación sobre Enfermedades Transmitidas por Mosquitos</CardTitle>
           <CardContent>
-            Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
+            Recordatorio: Se realizará una capacitación sobre la prevención de enfermedades transmitidas por mosquitos. Fecha: 20 de noviembre, 2024. Lugar: Centro de Convenciones del MINSA.
           </CardContent>
         </Card>
       </Section>
@@ -62,7 +62,8 @@ export function Homecomponent() {
 
 const HomeComponentContainer = styled.div`
   padding: 20px;
-  background-color: #f5f5f5;
+  color: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.bg};
 `;
 
 const Section = styled.div`
@@ -71,12 +72,12 @@ const Section = styled.div`
 
 const SectionTitle = styled.h2`
   font-size: 28px;
-  color: #333;
+  color: ${(props) => props.theme.text};
   margin-bottom: 20px;
 `;
 
 const Card = styled.div`
-  background-color: #fff;
+  color: ${(props) => props.theme.text};
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -90,17 +91,19 @@ const Card = styled.div`
 
 const CardTitle = styled.h3`
   font-size: 22px;
-  color: #333;
+  color: ${(props) => props.theme.text};
   margin-bottom: 10px;
 `;
 
 const CardDate = styled.p`
   font-size: 14px;
-  color: #666;
+  color: ${(props) => props.theme.text};
   margin-bottom: 10px;
 `;
 
 const CardContent = styled.p`
   font-size: 16px;
-  color: #555;
+  color: ${(props) => props.theme.text};
 `;
+
+export default Homecomponent;
